@@ -15,11 +15,35 @@
  */
 package com.peergreen.webcontainer;
 
+import java.io.File;
 import java.net.URI;
+import java.util.List;
+import java.util.Map;
+
+import com.peergreen.deployment.Artifact;
+import com.peergreen.deployment.facet.archive.Archive;
+import com.peergreen.injection.AnnotatedClass;
 
 public interface WebApplication {
+
+    Artifact getArtifact();
 
     String getContextPath();
 
     URI getURI();
+
+    List<Archive> getLibraries();
+
+    ClassLoader getClassLoader();
+    void setClassLoader(ClassLoader classLoader);
+
+    ClassLoader getParentClassLoader();
+    void setParentClassLoader(ClassLoader classLoader);
+
+    File getUnpackedDirectory();
+
+    void setUnpackedDirectory(File unpackedDirectory);
+
+    void setAnnotatedClasses(Map<String, AnnotatedClass> annotatedClasses);
+    Map<String, AnnotatedClass> getAnnotatedClasses();
 }

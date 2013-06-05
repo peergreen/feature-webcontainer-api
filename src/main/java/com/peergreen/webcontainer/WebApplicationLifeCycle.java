@@ -15,16 +15,18 @@
  */
 package com.peergreen.webcontainer;
 
-public enum WebApplicationLifeCycle {
 
-    DEPLOY,
+public enum WebApplicationLifeCycle {
+    CLASSLOADER,
+
+    METADATA,
+
+    INIT,
 
     START,
 
-    UNDEPLOY,
-
     STOP,
 
-    PARSE_XML
+    UNDEPLOY
 
 }
