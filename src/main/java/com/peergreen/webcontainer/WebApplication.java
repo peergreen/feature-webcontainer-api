@@ -46,4 +46,6 @@ public interface WebApplication {
 
     void setAnnotatedClasses(Map<String, AnnotatedClass> annotatedClasses);
     Map<String, AnnotatedClass> getAnnotatedClasses();
+
+    String getArchiveName();
 }
