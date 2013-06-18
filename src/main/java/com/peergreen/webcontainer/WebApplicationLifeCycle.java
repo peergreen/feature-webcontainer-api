@@ -21,6 +21,8 @@ public enum WebApplicationLifeCycle {
 
     METADATA,
 
+    JAVA_CONTEXT,
+
     INIT,
 
     START,

@@ -20,6 +20,8 @@ import java.net.URI;
 import java.util.List;
 import java.util.Map;
 
+import javax.naming.Context;
+
 import com.peergreen.deployment.Artifact;
 import com.peergreen.deployment.facet.archive.Archive;
 import com.peergreen.injection.AnnotatedClass;
@@ -48,4 +50,8 @@ public interface WebApplication {
     Map<String, AnnotatedClass> getAnnotatedClasses();
 
     String getArchiveName();
+
+    Context getJavaContext();
+    void setJavaContext(Context javaContext);
+
 }
