@@ -25,6 +25,7 @@ public interface WebApplication {
     Artifact getArtifact();
 
     String getContextPath();
+    void setContextPath(String contextPath);
 
     URI getURI();
 
