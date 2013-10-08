@@ -11,6 +11,8 @@ package com.peergreen.webcontainer;
 
 import java.io.File;
 import java.net.URI;
+import java.net.URL;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -58,4 +60,7 @@ public interface WebApplication {
 
     Context getJavaModuleContext();
     void setJavaModuleContext(Context javaModuleContext);
+
+    Collection<URL> getExtraTlds();
+
 }
