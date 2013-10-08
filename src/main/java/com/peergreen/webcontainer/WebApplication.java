@@ -45,8 +45,17 @@ public interface WebApplication {
     Map<String, AnnotatedClass> getAnnotatedClasses();
 
     String getArchiveName();
+    String getModuleName();
+    void setModuleName(String moduleName);
+    String getApplicationName();
+    void setApplicationName(String applicationName);
 
     Context getJavaContext();
     void setJavaContext(Context javaContext);
 
+    Context getJavaAppContext();
+    void setJavaAppContext(Context javaAppContext);
+
+    Context getJavaModuleContext();
+    void setJavaModuleContext(Context javaModuleContext);
 }
