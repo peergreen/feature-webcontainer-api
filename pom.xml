@@ -23,7 +23,7 @@
 
   <groupId>com.peergreen.webcontainer</groupId>
   <artifactId>peergreen-webcontainer-api</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3-SNAPSHOT</version>
 
   <name>Peergreen Web Container API</name>
 
@@ -36,7 +36,7 @@
     <connection>scm:git:https://forge.peergreen.com/git/git/feature/web-container/api.git</connection>
     <developerConnection>scm:git:https://forge.peergreen.com/git/git/feature/web-container/api.git</developerConnection>
     <url>https://forge.peergreen.com/git/summary/?r=feature/web-container/api.git</url>
-    <tag>PEERGREEN_WEBCONTAINER_API_1_0_2</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
